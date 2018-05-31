@@ -5,7 +5,7 @@ Based on: **yarn** and **laravel mix**.
 
 Vendor libraries included by default: **bootstrap**, **jquery**, **vue**, **axios**, **lodash**.
 
-**If you are a front-end developer, please see "FRONTEND.md" to learn about the development workflow**
+**If you are a front-end developer, please see "For Frontend Developers" section to learn about the development workflow**
 
 ## Requirements
 | Engine        | Version       |
