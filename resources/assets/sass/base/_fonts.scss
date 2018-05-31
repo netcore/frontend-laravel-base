@@ -1,0 +1,29 @@
+$fonts: (
+	'Open Sans': ('open-sans', (
+		'OpenSans-Light' 300 normal,
+		'OpenSans-LightItalic' 300 italic,
+		'OpenSans-Regular' 400 normal,
+		'OpenSans-Italic' 400 italic,
+		'OpenSans-SemiBold' 600 normal,
+		'OpenSans-SemiBoldItalic' 600 italic,
+		'OpenSans-Bold' 700 normal,
+		'OpenSans-BoldItalic' 700 italic,
+		'OpenSans-ExtraBold' 800 normal,
+		'OpenSans-ExtraBoldItalic' 800 italic
+	))
+);
+
+// include font faces
+@each $name, $src in $fonts {
+  $directory: nth($src, 1);
+  $locals: nth($src, 2);
+
+  @each $local in $locals {
+    $weight: nth($local, 2);
+    $style: nth($local, 3);
+    $local: nth($local, 1);
+    $path: $directory + '/' + $local;
+
+    @include font-face($name, $local, $path, $weight, $style);
+  }
+}

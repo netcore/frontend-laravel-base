@@ -1,0 +1,51 @@
+// index
+.band {
+	background-color: #ff9d5f;
+	padding: 20px 0;
+}
+
+.index-logo {
+    pointer-events: none;
+
+    svg, img {
+        margin: auto;
+    }
+}
+
+.list-group {
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .last-update {
+			font-size: rem(12);
+			font-weight: bold;
+			width: 100%;
+			text-align: right;
+        }
+    }
+}
+
+// global 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    outline: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}

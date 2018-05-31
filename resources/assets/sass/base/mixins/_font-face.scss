@@ -1,0 +1,27 @@
+@mixin font-face($name, $local, $path, $weight: null, $style: null, $exts: woff2 woff ttf svg eot) {
+	$src: null;
+
+	$extmods: (
+		svg: "#" + str-replace($local, " ", "_")
+	);
+
+	$formats: (
+		eot: "embedded-opentype",
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src:($src, url(quote('/fonts' + $path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		font-display: swap;
+		src: $src;
+    }
+}
