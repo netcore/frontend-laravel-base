@@ -11,23 +11,23 @@
     },
     "devDependencies": {
         "babel-loader": "^7.1.4",
-        "babel-preset-env": "^1.6.1",
-        "browser-sync": "^2.23.6",
-        "browser-sync-webpack-plugin": "^2.0.1",
+        "babel-preset-env": "^1.7.0",
+        "browser-sync": "^2.24.4",
+        "browser-sync-webpack-plugin": "^2.2.2",
         "copy-webpack-plugin": "^4.5.1",
-        "cross-env": "^5.1",
+        "cross-env": "^5.1.6",
         "exports-loader": "^0.7.0",
         "html-loader": "^0.5.5",
         "imagemin-mozjpeg": "^7.0.0",
-        "imagemin-webpack-plugin": "^2.1.0",
-        "laravel-mix": "^2.1.2"
+        "imagemin-webpack-plugin": "^2.1.5",
+        "laravel-mix": "^2.1.11"
     },
     "dependencies": {
-        "axios": "^0.18",
-        "bootstrap": "^4.0.0",
-        "jquery": "^3.2",
-        "lodash": "^4.17.4",
-        "popper.js": "^1.12",
-        "vue": "^2.5.7"
+        "axios": "^0.18.0",
+        "bootstrap": "^4.1.1",
+        "jquery": "^3.3.1",
+        "lodash": "^4.17.10",
+        "popper.js": "^1.14.3",
+        "vue": "^2.5.16"
     }
 }

@@ -8,10 +8,20 @@
 
 		data () {
 			return {
-				img: require(`../../../svg/${this.name}.svg`)
+				img: null
+			}
+		},
+
+        created () {
+			this.loadImg()
+        },
+
+        methods: {
+			loadImg () {
+				this.img = require(`../../../svg/${this.name}.svg`)
             }
         }
-	});
+	})
 
 	export default svginline
 </script>
