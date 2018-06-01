@@ -17,7 +17,8 @@ Vendor libraries included by default: **bootstrap**, **jquery**, **vue**, **axio
 ### Environmental setup
 1. Install [NodeJS](https://nodejs.org/en/)
   * on some systems "npm" needs to be installed separately - [see this](https://docs.npmjs.com/getting-started/installing-node) if you're having trouble getting through next steps
-2. Install [yarn](https://yarnpkg.com/en/docs/install)
+2. Install [Laravel](https://laravel.com/docs/5.6/installation)
+3. Install [yarn](https://yarnpkg.com/en/docs/install)
 
 ### Project setup
 1. `git clone https://github.com/netcore/frontend-laravel-base.git <project name>`
