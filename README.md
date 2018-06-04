@@ -25,8 +25,9 @@ Vendor libraries included by default: **bootstrap**, **jquery**, **vue**, **axio
 2. `cd <project name>`
 3. in `.env` file change `APP_NAME` to current projects name
 4. `yarn` or `yarn install`
-5. (optional) delete all `.placeholder` files
-6. `npm run watch`
+5. `composer install`
+6. (optional) delete all `.placeholder` files
+7. `npm run watch`
 
 ### Starting the development
 `npm run watch` to start a local server and watch for changes
