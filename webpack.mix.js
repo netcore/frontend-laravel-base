@@ -53,7 +53,7 @@ mix
                 to: 'assets/svg',
             }]),
             new imageminPlugin({
-                test: /\.(svg)$/i
+                test: /\.(svg)$/i,
             })
         ]
     })
