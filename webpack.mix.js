@@ -16,6 +16,9 @@ mix
     })
 	.js('resources/assets/js/app.js', 'public/assets/js')
     .sass('resources/assets/sass/app.scss', 'public/assets/css')
+        .options({
+            processCssUrls: false
+        })
     .copy('resources/assets/json', 'public/assets/json', false)
     .copy('resources/assets/fonts', 'public/assets/fonts', false)
     .copy('resources/assets/favicon', 'public/assets/favicon', false)
