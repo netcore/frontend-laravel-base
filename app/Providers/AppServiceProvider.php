@@ -12,19 +12,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
-        Blade::directive('svg', function ($arguments) {
-            $path = str_replace("'", '', $arguments);
-
-            $svg = new \DOMDocument();
-            $svg->load(public_path($path));
-            $output = $svg->saveXML($svg->documentElement);
-
-            return $output;
-        });
-    }
-
+    
     /**
      * Register any application services.
      *
