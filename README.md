@@ -88,8 +88,7 @@ _this task may take longer to finish because of image processing tasks_
 
 ### SVG
 * Usage
-  * `@svg(<file-name>)` - in blade files
-        * More info: [BladeSVG](https://github.com/adamwathan/blade-svg)
+  * `@svg(<file-name>)` - in blade files ( More info: [BladeSVG](https://github.com/adamwathan/blade-svg) )
   * `<svg-inline name="<file-name>"></svg-inline>` - in `.vue` files
 
 ### SASS/SCSS
